@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        li {
+            list-style-type: none;
+        }
+        
+        .products-container {
+            background-color: #064444;
+        }
+        
+        .sub-title {
+            font-size: 1.5em;
+            padding: var(--top-bot-half-em);
+            border-bottom: var(--border-bot);
+            background-color: #1e3064;
+        }
+        
+        .products-sub-container {
+            margin: var(--top-bot-half-em);
+            display: flex;
+            flex-flow: row wrap;
+            color: rgb(255, 255, 255);
+            justify-content: center;
+            background-color: #084949;
+        }
+        
+        .small-product-item {
+            display: flex;
+            flex-flow: row wrap;
+            background: #db4d4d;
+            margin: 0.75em;
+            font-size: 1.1em;
+            border-radius: 0.5em;
+            background-color: #154096;
+        }
+        
+        .small-product-item:hover {
+            box-shadow: 0px 0px 15px 2px #555555;
+        }
+        
+        .product-img-box {
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+            background: #eba5a5;
+            border-radius: 0.5em;
+            margin: 0.75rem;
+            display: flex;
+        }
+        
+        .product-img-box img {
+            align-self: center;
+            max-height: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .product-content {
+            display: flex;
+            width: 300px;
+            flex-flow: column nowrap;
+            justify-content: center;
+            line-height: 30px;
+            padding-top: 20px;
+        }
+        
+        .product-name {
+            font-weight: 500;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        .product-price {
+            text-align: center;
+            font-weight: 600;
+            padding: 8px 0;
+        }
+        
+        .products-navbar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #131414;
+        }
+        
+        .products-list {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-wrap: wrap;
+            align-content: center;
+            color: #e747bf;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            padding: 0.5em 2em;
+            transform: scale(1);
+            transition: 0.4s all ease;
+        }
+        
+        .products-list>.list-item:hover {
+            transform: scale(1.2);
+        }
+        
+        .search-div {
+            align-self: center;
+        }
+        
+        .search-div>input {
+            height: 32px;
+            margin: 0.5em 1em;
+            border: 0;
+            font-size: 1.1em;
+            border-radius: 0.2em;
+            transform: scale(1);
+            transition: 0.25s all ease;
+        }
+        
+        .search-div>.search-input {
+            width: 400px;
+            padding-left: 8px;
+        }
+        
+        .search-div>.search-button {
+            cursor: pointer;
+            width: 100px;
+        }
+        
+        .search-div>.search-input:focus-visible,
+        .search-button:hover {
+            outline: none;
+            box-shadow: 2px 2px 5px rgba(1, 1, 0, 0.7);
+        }
+        
+        .search-div>.search-input::placeholder {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <ul class="navbar-list flex-row-space-between">
+
+            <li class="navbar-list-item">
+                <a href="./">Anasayfa</a>
+            </li>
+            <li class="navbar-list-item">
+                <a href="./about-us.html">Hakkımızda</a>
+            </li>
+            <li class="navbar-list-item">
+                <a href="./products.html">Ürünlerimiz</a>
+            </li>
+            <li class="navbar-list-item">
+                <a href="./contact.html">İletişim</a>
+            </li>
+        </ul>
+
+        </nav>
+
+        </header>
+
+        <div class="products-navbar">
+
+            <ul class="products-list">
+                <li class="list-item"><a href="#products-guitar">Gitar</a></li>
+                <li class="list-item"><a href="#products-drum">Davul</a></li>
+                <li class="list-item"><a href="#products-yaylilar">Yaylılar</a></li>
+                <li class="list-item">
+                    <a href="#products-nefesliler">Nefesliler</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="products-container">
+            <h2 id="products-guitar" class="sub-title">Gitar</h2>
+
+            <div class="products-sub-container">
+
+                <div class="small-product-item">
+
+                    <div class="product-img-box">
+                        <img src="./images/Gitar/squier-classic-vibe-70s-jazz-bass.jpg" alt="Squier-Gitar" />
+                    </div>
+
+                </div>
+                <div class="small-product-item">
+                    <div class="product-img-box">
+                        <img src="./images/Gitar/Martinez-MP-1-PRE-CE-Cutaway-Ele_93748_1.jpg" alt="Martinez-Gitar" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h2 id="products-drum" class="sub-title">Davul</h2>
+            <div class="products-sub-container">
+
+
+                <div class="small-product-item">
+
+                    <div class="product-img-box">
+                        <img src="./images/Davul/roland-vad506-dijital-davul-seti_180233_1.jpg" alt="Roland Drum" />
+                    </div>
+
+                </div>
+
+                <div class="small-product-item">
+                    <div class="product-img-box">
+                        <img src="./images/Davul/pearl-rs505c-c91-roadshow-red-wi_35149_1.jpg" alt="Pearl Drum" />
+                    </div>
+
+
+                </div>
+
+            </div>
+            <h2 id="products-yaylilar" class="sub-title">Yaylılar</h2>
+
+            <div class="products-sub-container">
+
+                <div class="small-product-item">
+
+                    <div class="product-img-box">
+                        <img src="./images/Yaylılar/vanetta-vl-1b-4-4-mat-keman_94201_1.jpg" alt="Vanetta Keman" />
+                    </div>
+                </div>
+
+                <div class="small-product-item">
+                    <div class="product-img-box">
+                        <img src="./images/Yaylılar/ANTON-BRUCKNER-MAESTRO-IV-CELLO_71483_1.jpg" alt="Anton Çello" />
+                    </div>
+                </div>
+
+                <div class="small-product-item">
+
+                    <div class="product-img-box">
+                        <img src="./images/Yaylılar/vanetta-vl-3-3-4-masif-keman_173925_1.jpg" alt="Vannetta Keman" />
+                    </div>
+                </div>
+
+                <div class="small-product-item">
+
+                    <div class="product-img-box">
+                        <img src="./images/Yaylılar/OFENBACH-4-4-VIOLA-WITH-A-LITTLE_6967_1.jpg" alt="Ofenbach Keman" />
+                    </div>
+                </div>
+            </div>
+            <h2 id="products-nefesliler" class="sub-title">Nefesliler</h2>
+        </div>
+
+    </div>
+</body>
+
+</html>
